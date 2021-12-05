@@ -13,14 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'App\Http\Controllers\MainController@home');
 
-Route::get('/contactus', function () {
-    return view('contactus');
-});
+Route::get('/contactus', 'App\Http\Controllers\MainController@contactus');
 
-Route::get('/user/{id}/{name}', function ($id, $name) {
-    return 'ID: '. $id. 'Name: '. $name;
-});
+//Route::get('/user/{id}/{name}', function ($id, $name) {
+//    return 'ID: '. $id. 'Name: '. $name;
+//});
