@@ -17,6 +17,12 @@ Route::get('/', 'App\Http\Controllers\MainController@home');
 
 Route::get('/contactus', 'App\Http\Controllers\MainController@contactus');
 
+Route::get('/comment', 'App\Http\Controllers\MainController@comment');
+
+Route::post('/comment/check', 'App\Http\Controllers\MainController@comment_check');
+
+
+
 //Route::get('/user/{id}/{name}', function ($id, $name) {
 //    return 'ID: '. $id. 'Name: '. $name;
 //});

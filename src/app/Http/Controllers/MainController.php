@@ -15,4 +15,16 @@ class MainController extends Controller
         return view('contactus');
 
     }
+    public function comment(){
+        return view('comment');
+
+    }
+
+    public function comment_check(Request $request){
+       $valid = $request->validate([
+           'email' => 'required|min:4|max:30',
+           'subject' => 'required|min:4|max:20',
+           'message' => 'required|min:15|max:500'
+       ]);
+    }
 }

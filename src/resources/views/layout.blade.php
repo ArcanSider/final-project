@@ -16,8 +16,9 @@
     </a>
 
     <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
-        <a class="me-3 py-2 text-white text-decoration-none" href="#">Profile</a>
+        <a class="me-3 py-2 text-white text-decoration-none" href="/comment">Leave your comment</a>
         <a class="me-3 py-2 text-white text-decoration-none" href="/contactus">Contact us</a>
+
     </nav>
     <a class="btn btn-outline-warning" href="" >Sign in</a>
 </div>
