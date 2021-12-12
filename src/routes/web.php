@@ -17,7 +17,7 @@ Route::get('/', 'App\Http\Controllers\MainController@home');
 
 Route::get('/contactus', 'App\Http\Controllers\MainController@contactus');
 
-Route::get('/comment', 'App\Http\Controllers\MainController@comment');
+Route::get('/comment', 'App\Http\Controllers\MainController@comment')->name('comment');
 
 Route::post('/comment/check', 'App\Http\Controllers\MainController@comment_check');
 
