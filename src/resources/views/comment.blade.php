@@ -29,8 +29,8 @@
     <br>
     <h1>All comments</h1>
     @foreach($reviews as $element)
-        <div class="alert alert-warning">
-            <h3>{{$element->subject}}</h3>
+        <div class="alert alert-info">
+            <h2>{{$element->subject}}</h2>
             <b>{{$element->email}}</b>
             <p>{{$element->message}}</p>
         </div>

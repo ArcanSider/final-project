@@ -29,10 +29,12 @@ class MainController extends Controller
            'message' => 'required|min:15|max:500'
        ]);
 
+
         $review = new ContactModel();
         $review->email = $request->input('email');
         $review->subject = $request->input('subject');
         $review->message = $request->input('message');
+
 
         $review->save();
 
